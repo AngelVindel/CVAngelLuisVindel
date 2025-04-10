@@ -12,13 +12,18 @@ body {
   background-color: #c0d6fe; /* Fondo claro general */
 }
 
+/*Botón que me lleva al principio de la página*/
+#inicio{
+  font-size: 30px;
+}
+
 /* ----------------------- */
 /* SECCIÓN PRINCIPAL       */
 /* ----------------------- */
 
 #fondo {
   background: url("../images/fondo1.jpg") no-repeat center center/cover;
-  height: 75vh;
+  height: 73vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -112,12 +117,32 @@ body {
   margin: 0 10px;
   margin-top: 20px;
   margin-right: 20px;
+  position: relative;           /* Necesario para el ::after */
+  display: inline-block;        /* Para que el ancho se ajuste al texto */
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;                 /* Ajusta la separación de la línea */
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #e0e0e0;
+  transform: scaleX(0);         /* Empieza oculta */
+  transform-origin: left;       /* Inicia desde la izquierda */
+  transition: transform 0.3s ease-in-out;
 }
 
 .navbar-nav .nav-link:hover {
-  color: #e0e0e0 !important;
-  text-decoration: underline;
+  color: #e0e0e0da !important;
 }
+
+.navbar-nav .nav-link:hover::after {
+  transform: scaleX(1);         /* Se dibuja de izquierda a derecha */
+  color: #e0e0e0da;
+}
+
 
 /* ------------------------------ */
 /* MENÚ OFFCANVAS (lateral móvil) */
@@ -224,7 +249,7 @@ body {
 
 .card {
   background-color: #dce8ff;
-  border-radius: 15px;
+  border-radius: 16px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.749);
   width: 90%;
   margin: 0 auto; /* ← Esto la centra horizontalmente */
@@ -252,8 +277,11 @@ body {
 /* ------------------------------ */
 
 .skill-box {
-  background-color: #e8f0ff;
-  border-radius: 16px; /* 1rem → 16px */
+  background-color: #dce8ff;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.749);
+  width: 90%;
+  margin: 0 auto; /* ← Esto la centra horizontalmente */
   padding: 24px; /* 1.5rem → 24px */
 }
 
