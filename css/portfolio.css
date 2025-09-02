@@ -216,7 +216,6 @@ body {
 .botonRedes i {
   font-size: 30px !important;
   color: white;
-  margin-bottom: 12.5px;
 }
 
 .botonRedes img {
@@ -456,19 +455,17 @@ body {
 .title {
     position: absolute;
     top: 15px;
-    left: 20px;
+    padding-right: 20px;
     color: white;
-    font-size: 14px;
+    font-size: 0.9rem;
     font-weight: bold;
     text-transform: uppercase;
-    text-align: left;
 }
 
 .description {
     color: white;
     font-size: 18px;
     font-weight: bold;
-    max-width: 80%;
     text-align: left;
 }
 
