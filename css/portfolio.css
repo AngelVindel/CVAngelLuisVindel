@@ -232,6 +232,12 @@ body {
 
 #about .card-body p {
   margin-bottom: 8px; /* 0.5rem → 8px */
+  font-size: 18px;
+}
+
+#about .card-body strong {
+  margin-bottom: 8px; /* 0.5rem → 8px */
+  font-size: 18px;
 }
 
 #about .card-body {
@@ -331,7 +337,139 @@ body {
   padding-right: 20px;
 }
 
+/* ------------------------------ */
+/* Colores de las Barras */
+/* ------------------------------ */
 
+.bg-primary {
+  background-color: #0BCEAF !important;
+}
+.bg-info {
+  background-color: #ffc107 !important;
+}
+.bg-secondary {
+  background-color: #0a700d !important;
+}
+.bg-success {
+  background-color: #a79c28 !important;
+}
+.bg-dark {
+  background-color: #343a40 !important;
+}
+.bg-warning {
+  background-color: #07ff6a !important;
+}
+.bg-danger {
+  background-color: #ab10ed !important;
+}
+.bg-terciary {
+  background-color: #dc3545 !important;
+}
 
+/* ------------------------------ */
+/* Titulos personalizados */
+/* ------------------------------ */
+
+.text-outline {
+  -webkit-text-stroke: 3px rgba(0, 0, 0, 0.368); /* borde más grueso */
+  color: transparent;
+  opacity: 0.3;
+}
+
+.text-highlighted {
+  color: #0ea2aa; /* mismo turquesa que antes */
+}
+
+/* ------------------------------ */
+/* Span personalizados */
+/* ------------------------------ */
+
+#span{
+  white-space: nowrap;
+}
+
+/* ------------------------------ */
+/* Cards Habilidades personalizados */
+/* ------------------------------ */
+.card-body1 h6, 
+.card-body1 p,
+.card1 a h6, 
+.card1 a p {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  text-wrap: balance;
+  text-align: center;
+}
+
+.card-body1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------------------------------ */
+/* Cards difuminada */
+/* ------------------------------ */
+
+.custom-box {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px #424242;
+  margin-bottom: 20px;
+}
+
+.custom-box img {
+  width: 100%;
+  height: 87%;
+  object-fit: cover;
+  transition: filter 0.3s ease;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    transition: all 0.5s ease;
+}
+
+.custom-box:hover .overlay {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.custom-box:hover img {
+    filter: blur(2px);
+}
+
+.title {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.description {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    max-width: 80%;
+    text-align: left;
+}
 
 

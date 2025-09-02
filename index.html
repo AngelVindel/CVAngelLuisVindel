@@ -16,7 +16,10 @@
       href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
       rel="stylesheet"
     />
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
     <link rel="stylesheet" href="css/portfolio.css" />
     <link rel="icon" href="images/iconocv.ico" type="image/x-icon" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -32,8 +35,8 @@
           <div class="container-fluid">
             <!-- Marca -->
             <a class="navbar-brand text-white transition-brand" href="#fondo"
-              ><i id="inicio" class="fi fi-rr-person-cv"></i></a
-            >
+              ><i id="inicio" class="fi fi-rr-person-cv"></i
+            ></a>
 
             <!-- Botón pequeñas pantallas -->
             <button
@@ -56,7 +59,9 @@
                 <a class="nav-link text-white" href="#skill">Lenguajes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#portfolio">Habilidades</a>
+                <a class="nav-link text-white" href="#habilidades"
+                  >Habilidades</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white" href="#experience"
@@ -95,7 +100,7 @@
                     <a class="nav-link" href="#skill">Lenguajes</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#portfolio">Habilidades</a>
+                    <a class="nav-link" href="#habilidades">Habilidades</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#experience">Experiencia</a>
@@ -121,7 +126,13 @@
       <p class="text-white" style="opacity: 80%">
         Técnico superior en desarrollo de aplicaciones multiplataforma
       </p>
-      <a class="btn btn-primary font-weight-bold" href="images/CV Angel Luis.pdf" download="CV Angel Luis.pdf" style="margin-top: 15px;">Descargar CV</a>
+      <a
+        class="btn btn-primary font-weight-bold"
+        href="images/CV Angel Luis.pdf"
+        download="CV Angel Luis.pdf"
+        style="margin-top: 15px"
+        >Descargar CV</a
+      >
     </div>
 
     <!-- REDES SOCIALES -->
@@ -130,7 +141,9 @@
         href="https://www.linkedin.com/in/angel-luis-vindel-molina-b2a485253/"
         target="_blank"
         style="z-index: 1; margin-top: -4.7px"
-        data-bs-toggle="tooltip" data-bs-placement="bottom" title="LinkedIn"
+        data-bs-toggle="tooltip"
+        data-bs-placement="bottom"
+        title="LinkedIn"
       >
         <button class="botonRedes">
           <img src="images/linkedin.png" alt="Logo LinkedIn" />
@@ -140,7 +153,9 @@
         href="https://github.com/AngelVindel"
         target="_blank"
         style="z-index: 1; margin-top: -4.7px"
-        data-bs-toggle="tooltip" data-bs-placement="bottom" title="GitHub"
+        data-bs-toggle="tooltip"
+        data-bs-placement="bottom"
+        title="GitHub"
       >
         <button class="botonRedes">
           <i class="bi bi-github"></i>
@@ -158,12 +173,21 @@
           <div class="row">
             <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
               <div class="card-body">
-                <h2
-                  class="mb-4 text-primary font-weight-bold"
-                  style="font-size: 25px"
-                >
-                  Sobre mí
-                </h2>
+                <div class="position-relative text-center mb-4">
+                  <h1
+                    class="display-4 fw-bold text-uppercase text-outline"
+                    style="white-space: nowrap"
+                  >
+                    Sobre mí
+                  </h1>
+                  <h1
+                    class="position-absolute top-50 start-50 translate-middle text-uppercase fw-bold text-highlighted m-0"
+                    style="white-space: nowrap"
+                  >
+                    Sobre mí
+                  </h1>
+                </div>
+
                 <p class="text-muted">
                   Soy Ángel Luis Vindel Molina, desarrollador de aplicaciones y
                   páginas web. Apasionado por la tecnología y siempre en la
@@ -171,27 +195,42 @@
                 </p>
                 <p class="text-muted">
                   Me gustan los videojuegos, el fútbol y el desarrollo de
-                  aplicaciones. Soy creativo, amable, disfruto
-                  trabajando en equipo y siempre me motiva mejorar.
+                  aplicaciones. Soy creativo, amable, disfruto trabajando en
+                  equipo y siempre me motiva mejorar.
                 </p>
               </div>
             </div>
             <div class="col-lg-6 col-md-12">
               <div class="card-body">
-                <h2 class="mb-4 text-primary font-weight-bold" style="font-size: 25px">
-                  Información
-                </h2>
+                <div class="position-relative text-center mb-4">
+                  <h1
+                    class="display-4 fw-bold text-uppercase text-outline"
+                    style="white-space: nowrap"
+                  >
+                    Información
+                  </h1>
+                  <h1
+                    class="position-absolute top-50 start-50 translate-middle text-uppercase fw-bold text-highlighted m-0"
+                    style="white-space: nowrap"
+                  >
+                    Información
+                  </h1>
+                </div>
                 <div class="row mb-3">
                   <div class="col-sm-4">
                     <strong class="text-uppercase text-dark">Edad:</strong>
                   </div>
-                  <div class="col-sm-8 text-muted" id="edad"></div>
+                  <div
+                    class="col-sm-8 text-muted"
+                    style="font-size: 18px"
+                    id="edad"
+                  ></div>
                 </div>
                 <div class="row mb-3">
                   <div class="col-sm-4">
                     <strong class="text-uppercase text-dark">Email:</strong>
                   </div>
-                  <div class="col-sm-8 text-muted">
+                  <div class="col-sm-8 text-muted" style="font-size: 18px">
                     angel111.luis32@gmail.com
                   </div>
                 </div>
@@ -199,21 +238,25 @@
                   <div class="col-sm-4">
                     <strong class="text-uppercase text-dark">Móvil:</strong>
                   </div>
-                  <div class="col-sm-8 text-muted">647 05 19 14</div>
+                  <div class="col-sm-8 text-muted" style="font-size: 18px">
+                    647 05 19 14
+                  </div>
                 </div>
                 <div class="row mb-3">
                   <div class="col-sm-4">
                     <strong class="text-uppercase text-dark">Dirección:</strong>
                   </div>
-                  <div class="col-sm-8 text-muted">
-                    Calle Guillermo Pingarrón, 3 28018 Madrid
+                  <div class="col-sm-8 text-muted" style="font-size: 18px">
+                    Calle Guillermo Pingarrón, 3 Madrid
                   </div>
                 </div>
                 <div class="row mb-3">
                   <div class="col-sm-4">
                     <strong class="text-uppercase text-dark">Idiomas:</strong>
                   </div>
-                  <div class="col-sm-8 text-muted">Español, Inglés</div>
+                  <div class="col-sm-8 text-muted" style="font-size: 18px">
+                    Español, Inglés
+                  </div>
                 </div>
               </div>
             </div>
@@ -224,109 +267,364 @@
 
     <!--LENGUAJES-->
     <div class="section" id="skill">
-  <div class="container py-5">
-    <div class="skill-box shadow-lg rounded-lg" data-aos="fade-up"
-          data-aos-offset="10">
-      <div class="h4 text-center mb-5 title text-primary font-weight-bold" style="font-size: 25px; margin-top: 20px;">
-        Lenguajes de programación
-      </div>
-      <div class="row gy-4">
-
-        <!-- JAVA -->
-        <div class="col-md-6">
-          <div class="progress-container">
-            <span class="progress-badge">JAVA</span>
-            <div class="progress-wrapper">
-              <div class="progress">
-                <div class="progress-bar" data-value="80"></div>
+      <div class="container py-5">
+        <div
+          class="skill-box shadow-lg rounded-lg"
+          data-aos="fade-up"
+          data-aos-offset="10"
+        >
+          <div class="position-relative text-center mb-5">
+            <h1 class="display-4 fw-bold text-uppercase text-outline">
+              Lenguajes de programación
+            </h1>
+            <h1
+              class="position-absolute top-50 start-50 translate-middle text-uppercase fw-bold text-highlighted m-0"
+              style="white-space: nowrap"
+            >
+              Lenguajes
+            </h1>
+          </div>
+          <div class="row gy-4">
+            <!-- JAVA -->
+            <div class="col-md-6">
+              <div class="progress-container">
+                <span class="progress-badge">JAVA</span>
+                <div class="progress-wrapper">
+                  <div class="progress">
+                    <div class="progress-bar bg-terciary" data-value="80"></div>
+                  </div>
+                  <span class="progress-value">0%</span>
+                </div>
               </div>
-              <span class="progress-value">0%</span>
+            </div>
+
+            <!-- SQL -->
+            <div class="col-md-6">
+              <div class="progress-container">
+                <span class="progress-badge">SQL</span>
+                <div class="progress-wrapper">
+                  <div class="progress">
+                    <div class="progress-bar bg-success" data-value="70"></div>
+                  </div>
+                  <span class="progress-value">0%</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- FLUTTER - DART -->
+            <div class="col-md-6">
+              <div class="progress-container">
+                <span class="progress-badge">FLUTTER - DART</span>
+                <div class="progress-wrapper">
+                  <div class="progress">
+                    <div class="progress-bar bg-dark" data-value="40"></div>
+                  </div>
+                  <span class="progress-value">0%</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- KOTLIN -->
+            <div class="col-md-6">
+              <div class="progress-container">
+                <span class="progress-badge">KOTLIN</span>
+                <div class="progress-wrapper">
+                  <div class="progress">
+                    <div
+                      class="progress-bar bg-secondary"
+                      data-value="75"
+                    ></div>
+                  </div>
+                  <span class="progress-value">0%</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- C# -->
+            <div class="col-md-6">
+              <div class="progress-container">
+                <span class="progress-badge">C#</span>
+                <div class="progress-wrapper">
+                  <div class="progress">
+                    <div class="progress-bar bg-danger" data-value="70"></div>
+                  </div>
+                  <span class="progress-value">0%</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- PYTHON -->
+            <div class="col-md-6">
+              <div class="progress-container">
+                <span class="progress-badge">PYTHON</span>
+                <div class="progress-wrapper">
+                  <div class="progress">
+                    <div class="progress-bar bg-warning" data-value="50"></div>
+                  </div>
+                  <span class="progress-value">0%</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- HTML -->
+            <div class="col-md-6">
+              <div class="progress-container">
+                <span class="progress-badge">HTML</span>
+                <div class="progress-wrapper">
+                  <div class="progress">
+                    <div class="progress-bar bg-info" data-value="70"></div>
+                  </div>
+                  <span class="progress-value">0%</span>
+                </div>
+              </div>
+            </div>
+            <!-- CSS -->
+            <div class="col-md-6">
+              <div class="progress-container">
+                <span class="progress-badge">CSS</span>
+                <div class="progress-wrapper">
+                  <div class="progress">
+                    <div class="progress-bar bg-primary" data-value="60"></div>
+                  </div>
+                  <span class="progress-value">0%</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-
-        <!-- SQL -->
-        <div class="col-md-6">
-          <div class="progress-container">
-            <span class="progress-badge">SQL</span>
-            <div class="progress-wrapper">
-              <div class="progress">
-                <div class="progress-bar" data-value="70"></div>
-              </div>
-              <span class="progress-value">0%</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- FLUTTER - DART -->
-        <div class="col-md-6">
-          <div class="progress-container">
-            <span class="progress-badge">FLUTTER - DART</span>
-            <div class="progress-wrapper">
-              <div class="progress">
-                <div class="progress-bar" data-value="40"></div>
-              </div>
-              <span class="progress-value">0%</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- KOTLIN -->
-        <div class="col-md-6">
-          <div class="progress-container">
-            <span class="progress-badge">KOTLIN</span>
-            <div class="progress-wrapper">
-              <div class="progress">
-                <div class="progress-bar" data-value="75"></div>
-              </div>
-              <span class="progress-value">0%</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- C# -->
-        <div class="col-md-6">
-          <div class="progress-container">
-            <span class="progress-badge">C#</span>
-            <div class="progress-wrapper">
-              <div class="progress">
-                <div class="progress-bar" data-value="70"></div>
-              </div>
-              <span class="progress-value">0%</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- PYTHON -->
-        <div class="col-md-6">
-          <div class="progress-container">
-            <span class="progress-badge">PYTHON</span>
-            <div class="progress-wrapper">
-              <div class="progress">
-                <div class="progress-bar" data-value="50"></div>
-              </div>
-              <span class="progress-value">0%</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- HTML Y CSS -->
-        <div class="col-md-6">
-          <div class="progress-container">
-            <span class="progress-badge">HTML Y CSS</span>
-            <div class="progress-wrapper">
-              <div class="progress">
-                <div class="progress-bar" data-value="60"></div>
-              </div>
-              <span class="progress-value">0%</span>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
-  </div>
-</div>
+
+    <!--HABILIDADES-->
+    <div class="section" id="habilidades">
+      <div class="container py-5">
+        <div
+          class="skill-box shadow-lg rounded-lg"
+          data-aos="fade-up"
+          data-aos-offset="10"
+        >
+          <div class="position-relative text-center mb-5">
+            <h1 class="display-4 fw-bold text-uppercase text-outline">
+              Habilidades
+            </h1>
+            <h1
+              class="position-absolute top-50 start-50 translate-middle text-uppercase fw-bold text-highlighted m-0"
+              style="white-space: nowrap"
+            >
+              Habilidades
+            </h1>
+          </div>
+
+          <div
+            id="habilidadesCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <!-- Slide 1 -->
+              <div class="carousel-item active">
+                <h5 class="text-center mb-5 text-primary fw-bold">
+                  WEB y API REST
+                </h5>
+
+                <div class="row justify-content-center text-center g-4">
+                  
+                  <!-- Card 1 -->
+                  <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+                    <div
+                      class="custom-box bg-white shadow-sm border-0 rounded-4 h-100 p-3"
+                    >
+                      <a
+                        href="https://spring.io/"
+                        target="_blank"
+                      >
+                        <img
+                          src="images/Web1.png"
+                          alt="Imagen de Spring"
+                          class="img-fluid rounded-3"
+                          style="object-fit: cover;"
+                        />
+                        <div class="overlay">
+                          <span class="title"
+                            >Guía sobre servicios REST en Spring</span
+                          >
+                          <span class="description">Servicios API</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- Card 2 -->
+                  <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+                    <div
+                      class="custom-box bg-white shadow-sm border-0 rounded-4 h-100 p-3"
+                    >
+                      <a
+                        href="https://www.dongee.com/tutoriales/backend-que-es-como-se-aprende/"
+                        target="_blank"
+                      >
+                        <img
+                          src="images/web2.jpg"
+                          alt="Imagen de BackEnd"
+                          class="img-fluid w-100 rounded-3"
+                          style="object-fit: cover; "
+                        />
+                        <div class="overlay">
+                          <span class="title"
+                            >Desarrollo BackEnd</span
+                          >
+                          <span class="description">Servicios API</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- Card 3 -->
+                  <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+                    <div
+                      class="custom-box bg-white shadow-sm border-0 rounded-4 h-100 p-3"
+                    >
+                      <a
+                        href="https://www.ibm.com/es-es/think/topics/rest-apis"
+                        target="_blank"
+                      >
+                        <img
+                          src="images/web3.png"
+                          alt="Imagen de API REST"
+                          class="img-fluid w-100 rounded-3"
+                          style="object-fit: cover; "
+                        />
+                        <div class="overlay">
+                          <span class="title"
+                            >Conectar datos mediante API REST</span
+                          >
+                          <span class="description">Servicios API</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="carousel-item">
+                <h5 class="text-center mb-5 text-primary fw-bold">
+                  Aplicaciones Multiplataforma
+                </h5>
+
+                <div class="row justify-content-center text-center g-4">
+                  <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+                    <div class="custom-box bg-white shadow-sm border-0 rounded-4 h-100 p-3">
+                      <a href="https://developer.android.com/studio/intro?hl=es-419" target="_blank">
+                        <img src="images/aplicacion1.png" alt="Imagen de Kotlin" class="img-fluid w-100 rounded-3"
+                          style="object-fit: cover; " />
+                        <div class="overlay">
+                          <span class="title">Aplicacion android con Kotlin</span>
+                          <span class="description">Aplicaciones Android</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+                    <div class="custom-box bg-white shadow-sm border-0 rounded-4 h-100 p-3">
+                      <a href="https://localizely.com/blog/flutter-localization-step-by-step/?tab=using-gen-l10n#part-1-setting-up-your-flutter-app-t0" target="_blank">
+                        <img src="images/aplicacion2.png" alt="Imagen de Flutter" class="img-fluid w-100 rounded-3"
+                          style="object-fit: cover; " />
+                        <div class="overlay">
+                          <span class="title">Aplicacion android con Flutter</span>
+                          <span class="description">Apps Multiplataforma</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+                    <div class="custom-box bg-white shadow-sm border-0 rounded-4 h-100 p-3">
+                      <a href="https://developer.android.com/studio?hl=es-419" target="_blank">
+                        <img src="images/aplicacion3.png" alt="Imagen de diseño" class="img-fluid w-100 rounded-3"
+                          style="object-fit: cover; " />
+                        <div class="overlay">
+                          <span class="title">Diseño con Jetpack Compose y XML</span>
+                          <span class="description">Apps Multiplataforma</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <h5 class="text-center mb-5 text-primary fw-bold">
+                  Aplicaciones de Escritorio
+                </h5>
+
+                <div class="row justify-content-center text-center g-4">
+                  <div class="col-md-5 col-lg-3">
+                    <div
+                      class="card1 bg-white shadow-sm border-0 rounded-4 h-100 p-4"
+                      style="max-width: 300px; margin: 0 auto"
+                    >
+                      <div class="card-body1">
+                        <h6 class="fw-bold">.NET Framework</h6>
+                        <p class="text-muted mb-0">
+                          <span id="span">Aplicaciones</span> escritorio
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-5 col-lg-3">
+                    <div
+                      class="card1 bg-white shadow-sm border-0 rounded-4 h-100 p-4"
+                      style="max-width: 300px; margin: 0 auto"
+                    >
+                      <div class="card-body1">
+                        <h6 class="fw-bold">TFG NightNav</h6>
+                        <p class="text-muted mb-0">App de ocio</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-5 col-lg-3">
+                    <div
+                      class="card1 bg-white shadow-sm border-0 rounded-4 h-100 p-4"
+                      style="max-width: 300px; margin: 0 auto"
+                    >
+                      <div class="card-body1">
+                        <h6 class="fw-bold">C#</h6>
+                        <p class="text-muted mb-0">
+                          Lenguaje principal en entornos .NET
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Controles -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#habilidadesCarousel"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#habilidadesCarousel"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon"></span>
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="scripts/porcentaje.js"></script>
     <script src="scripts/cambiaColorScroll.js"></script>
